@@ -1,0 +1,226 @@
+[
+  {
+    "name": "APOKALIPTO",
+    "description": "Mel Gibson's film Apocalypto is an action-adventure movie. Takes place in the jungles of Mesoamerica. It's a movie that revolves around a tribe man by the name of Jaguar Paw and his inexhaustible effort to free himself from his captors and return to his family.",
+    "director": "MEL GİBSON",
+    "duration": "2h 18m",
+    "image": "apokalipto.jpeg",
+    "publishDate": "2006",
+    "category": "Action/Adventure",
+    "imdb": "4.3/5",
+    "stars": ["Rudy Youngblood", "Dalia Hernandez", "Raoul Trujillo"]
+  },
+  {
+    "name": "DJANGO",
+    "description": "The main themes of Django Unchained are slavery, revenge, and justice. It follows Django, a slave who is freed from his chains by a German bounty hunter named Dr. King Schultz (Christoph Waltz) and trained to be a bounty hunter himself.",
+    "director": "QUENTİN TARANTİNO",
+    "duration": "2h 45m",
+    "image": "django.jpeg",
+    "publishDate": "2012",
+    "category": "Western/Action",
+    "imdb": "4.4/5",
+    "stars": ["Christoph Waltz", "Leonardo DiCaprio", "Jamie Foxx"]
+  },
+  {
+    "name": "THE REVENANT",
+    "description": "A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled by a bear and left for dead by members of his own hunting team.",
+    "director": "ALEJANDRO GONZÁLEZ IÑÁRRİTU",
+    "duration": "2h 36m",
+    "image": "revenant.jpeg",
+    "publishDate": "2015",
+    "category": "Western/Action",
+    "imdb": "4/5",
+    "stars": ["Leonardo DiCaprio", "Tom Hardy", "Domhnall Gleeson"]
+  },
+  {
+    "name": "THE HATEFUL EIGHT",
+    "description": "The Hateful Eight is a 2015 American western thriller movie written and directed by Quentin Tarantino. It is about eight violent people who, during a blizzard, meet in a inn and learn they may have reasons to fight each other.",
+    "director": "QUENTİN TARANTİNO",
+    "duration": "3h 7m",
+    "image": "hatefuleight.jpeg",
+    "publishDate": "2015",
+    "category": "Western/Action",
+    "imdb": "3.9/5",
+    "stars": ["Samuel L. Jackson", "Kurt Russell", "Jennifer Jason Leigh"]
+  },
+  {
+    "name": "THE GOOD, THE BAD AND THE UGLY",
+    "description": "A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
+    "director": "SERGİO LEONE",
+    "duration": "2h 58m",
+    "image": "good_bad_ugly.jpeg",
+    "publishDate": "1966",
+    "category": "Western/Action",
+    "imdb": "4.2/5",
+    "stars": ["Clint Eastwood", "Eli Wallach", "Lee Van Cleef"]
+  },
+  {
+    "name": "INCENDIES",
+    "description": "The story concerns Canadian twins who travel to their mother's native country in the Levant to uncover her hidden past amidst a bloody civil war. While the country is unnamed, the events in the film are heavily influenced by the Lebanese Civil War and particularly the story of prisoner Souha Bechara.",
+    "director": "Denis Villeneuve",
+    "duration": "2h 10m",
+    "image": "incendies.jpg",
+    "publishDate": "2010",
+    "category": "War/Mystery",
+    "imdb": "4.1/5",
+    "stars": [
+      "Mélissa Désormeaux-Poulin",
+      "Lubna Azabal",
+      "Abdelghafour Elaaziz"
+    ]
+  },
+  {
+    "name": "THE PIANIST",
+    "description": "During WWII, acclaimed Polish musician Wladyslaw faces various struggles as he loses contact with his family. As the situation worsens, he hides in the ruins of Warsaw in order to survive.",
+    "director": "Roman Polanski",
+    "duration": "2h 30m",
+    "image": "pianist.jpg",
+    "publishDate": "2002",
+    "category": "War/Drama",
+    "imdb": "4.25/5",
+    "stars": ["Adrien Brody", "Thomas Kretschmann", "Frank Finlay"]
+  },
+  {
+    "name": "THE DEPARTED",
+    "description": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+    "director": "Martin Scorsese",
+    "duration": "2h 31m",
+    "image": "departed.jpg",
+    "publishDate": "2006",
+    "category": "Crime/Thriller",
+    "imdb": "4.25/5",
+    "stars": ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson"]
+  },
+  {
+    "name": "THE SHAWSHANK REDEMPTION",
+    "description": "Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.",
+    "director": "Frank Darabont",
+    "duration": "2h 22m",
+    "image": "shawshank.jpg",
+    "publishDate": "1994",
+    "category": "Drama/Crime",
+    "imdb": "4.65/5",
+    "stars": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"]
+  },
+  {
+    "name": "THE GODFATHER",
+    "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    "director": "Francis Ford Coppola",
+    "duration": "2h 58m",
+    "image": "godfather.jpg",
+    "publishDate": "1972",
+    "category": "Crime/Drama",
+    "imdb": "4.6/5",
+    "stars": ["Marlon Brando", "Al Pacino", "James Caan"]
+  },
+  {
+    "name": "JOHN WICK",
+    "description": "John Wick is a retired assassin who returns back to his old ways after a group of Russian gangsters steal his car and kill a puppy which was given to him by his late wife Helen. The film was developed in 2012, where principal photography began September 25, 2013 and wrapped on December 20, 2013.",
+    "director": "Chad Stahelski",
+    "duration": "2h 49m",
+    "image": "johnwick.jpeg",
+    "publishDate": "2023",
+    "category": "Action/Thriller",
+    "imdb": "4.2/5",
+    "stars": ["Keanu Reeves", "Bill Skarsgård", "Donnie Yen"]
+  },
+  {
+    "name": "THE WOLF OF WALL STREET",
+    "description": "The Wolf of Wall Street is a memoir by Jordan Belfort that recounts his rise and fall as a stockbroker on Wall Street. Filled with wild anecdotes and insights into the world of finance, the book offers a firsthand account of Belfort's excessive lifestyle and the corruption that ultimately led to his downfall.",
+    "director": "Martin Scorsese",
+    "duration": "3h",
+    "image": "wolfOfWallStreet.jpeg",
+    "publishDate": "2013",
+    "category": "Crime/Comedy",
+    "imdb": "4.1/5",
+    "stars": ["Leonardo DiCaprio", "Matthew McConaughey", "Jonah Hill"]
+  },
+  {
+    "name": "THE DARK KNIGHT",
+    "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    "director": "Christopher Nolan",
+    "duration": "2h 32m",
+    "image": "darknight.jpg",
+    "publishDate": "2008",
+    "category": "Action/Thriller",
+    "imdb": "4.5/5",
+    "stars": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"]
+  },
+  {
+    "name": "THE MATRIX",
+    "description": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+    "director": "The Wachowskis",
+    "duration": "2h 16m",
+    "image": "matrix.jpg",
+    "publishDate": "1999",
+    "category": "Action/Sci-Fi",
+    "imdb": "4.35/5",
+    "stars": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+  },
+  {
+    "name": "INCEPTION",
+    "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+    "director": "Christopher Nolan",
+    "duration": "2h 28m",
+    "image": "inception.jpg",
+    "publishDate": "2010",
+    "category": "Action/Sci-Fi",
+    "imdb": "4.4/5",
+    "stars": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"]
+  },
+  {
+    "name": "INTERSTELLAR",
+    "description": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+    "director": "Christopher Nolan",
+    "duration": "2h 49m",
+    "image": "interstaller.jpg",
+    "publishDate": "2014",
+    "category": "Sci-Fi/Adventure",
+    "imdb": "4.35/5",
+    "stars": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+  },
+  {
+    "name": "THE MARTIAN",
+    "description": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive and can survive until a potential rescue.",
+    "director": "Ridley Scott",
+    "duration": "2h 24m",
+    "image": "martian.jpeg",
+    "publishDate": "2015",
+    "category": "Sci-Fi/Adventure",
+    "imdb": "4/5",
+    "stars": ["Matt Damon", "Jessica Chastain", "Kristen Wiig"]
+  },
+  {
+    "name": "AVATAR",
+    "description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "director": "James Cameron",
+    "duration": "2h 42m",
+    "image": "avatar.jpg",
+    "publishDate": "2009",
+    "category": "Sci-Fi/Adventure",
+    "imdb": "3.85/5",
+    "stars": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"]
+  },
+  {
+    "name": "THE LORD OF THE RINGS: THE RETURN OF THE KING",
+    "description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+    "director": "Peter Jackson",
+    "duration": "3h 21m",
+    "image": "lord_of_the_kings.jpg",
+    "publishDate": "2003",
+    "category": "Fantasy/Adventure",
+    "imdb": "4.5/5",
+    "stars": ["Elijah Wood", "Viggo Mortensen", "Ian McKellen"]
+  },
+  {
+    "name": "HARRY POTTER AND THE DEATHLY HALLOWS: PART 2",
+    "description": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
+    "director": "David Yates",
+    "duration": "2h 10m",
+    "image": "harry_pother.jpg",
+    "publishDate": "2011",
+    "category": "Fantasy/Adventure",
+    "imdb": "4.05/5",
+    "stars": ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"]
+  }
+]
