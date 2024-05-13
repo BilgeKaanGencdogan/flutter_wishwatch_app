@@ -30,7 +30,10 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
-*firebase.options.dart
+
+# Ignore firebase options file
+lib/firebase_options.dart
+
 # Symbolication related
 app.*.symbols
 
