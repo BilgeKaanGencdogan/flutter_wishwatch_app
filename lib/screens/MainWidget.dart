@@ -36,10 +36,6 @@ class _MainWidgetState extends State<MainWidget> {
                   "Recommended",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
-                FloatingActionButton(
-                  onPressed: () {},
-                  child: const Text("View All"),
-                ),
               ],
             ),
           ),
@@ -56,10 +52,6 @@ class _MainWidgetState extends State<MainWidget> {
                 const Text(
                   "Best Of 2024",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                ),
-                FloatingActionButton(
-                  onPressed: () {},
-                  child: const Text("View All"),
                 ),
               ],
             ),

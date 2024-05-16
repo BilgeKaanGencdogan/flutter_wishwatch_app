@@ -27,39 +27,54 @@ final _router = GoRouter(
         GoRoute(
           path: 'sign-in',
           builder: (context, state) {
-            return SignInScreen(
-              actions: [
-                ForgotPasswordAction(((context, email) {
-                  final uri = Uri(
-                    path: '/sign-in/forgot-password',
-                    queryParameters: <String, String?>{
-                      'email': email,
-                    },
-                  );
-                  context.push(uri.toString());
-                })),
-                AuthStateChangeAction(((context, state) {
-                  final user = switch (state) {
-                    SignedIn state => state.user,
-                    UserCreated state => state.credential.user,
-                    _ => null
-                  };
-                  if (user == null) {
-                    return;
-                  }
-                  if (state is UserCreated) {
-                    user.updateDisplayName(user.email!.split('@')[0]);
-                  }
-                  if (!user.emailVerified) {
-                    user.sendEmailVerification();
-                    const snackBar = SnackBar(
-                        content: Text(
-                            'Please check your email to verify your email address'));
-                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                  }
-                  context.pushReplacement('/main');
-                })),
-              ],
+            return Scaffold(
+              body: Center(
+                child: Card(
+                  color: Colors.purple, // Set the card color to purple
+                  margin:
+                      EdgeInsets.symmetric(horizontal: 32.0, vertical: 16.0),
+                  child: Container(
+                    width: 500,
+                    height: 500, // Set the card width
+                    padding: EdgeInsets.all(16.0),
+                    child: SignInScreen(
+                      actions: [
+                        ForgotPasswordAction(((context, email) {
+                          final uri = Uri(
+                            path: '/sign-in/forgot-password',
+                            queryParameters: <String, String?>{
+                              'email': email,
+                            },
+                          );
+                          context.push(uri.toString());
+                        })),
+                        AuthStateChangeAction(((context, state) {
+                          final user = switch (state) {
+                            SignedIn state => state.user,
+                            UserCreated state => state.credential.user,
+                            _ => null
+                          };
+                          if (user == null) {
+                            return;
+                          }
+                          if (state is UserCreated) {
+                            user.updateDisplayName(user.email!.split('@')[0]);
+                          }
+                          if (!user.emailVerified) {
+                            user.sendEmailVerification();
+                            const snackBar = SnackBar(
+                                content: Text(
+                                    'Please check your email to verify your email address'));
+                            ScaffoldMessenger.of(context)
+                                .showSnackBar(snackBar);
+                          }
+                          context.pushReplacement('/main');
+                        })),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             );
           },
           routes: [
