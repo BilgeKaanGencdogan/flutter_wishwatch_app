@@ -146,10 +146,6 @@ class _MainWidgetState extends State<MainWidget> {
           // Set the title to 'Library' when the library icon is selected
           appBarTitle = ProjectStrings.libraryWidgetAppbarString;
           break;
-        case 2:
-          // Set the title to the default value when the menu icon is selected
-          appBarTitle = ProjectStrings.searchWidgetAppbarString;
-          break;
       }
     });
   }
