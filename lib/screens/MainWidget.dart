@@ -125,11 +125,7 @@ class _MainWidgetState extends State<MainWidget> {
           BottomNavigationBarItem(
             icon: Icon(Icons.library_books),
             label: ProjectStrings.bottomNavigationBarLibrary,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: ProjectStrings.bottomNavigationBarSearch,
-          ),
+          ),    
         ],
         currentIndex: selectedIndex,
         onTap: onItemTapped,

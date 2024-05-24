@@ -6,43 +6,110 @@ import 'package:flutter_470project/model/movie.dart';
 import 'package:flutter_470project/model/moviesys.dart';
 import 'package:go_router/go_router.dart';
 
-class ListViewWidgetForBest extends StatelessWidget {
+class ListViewWidgetForBest extends StatefulWidget {
   const ListViewWidgetForBest({super.key});
+
+   @override
+  _ListViewWidgetForBestState createState() => _ListViewWidgetForBestState();
+}
+
+class _ListViewWidgetForBestState extends State<ListViewWidgetForBest> {
+
+  List<Movie> _movies = [];
+  List<Movie> _filteredMovies = [];
+  String _searchQuery = '';
+  bool _isLoading = true;
+
+  @override
+  void initState(){
+    super.initState();
+    _loadMovies();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-      future: loadMovies(),
-      builder: (BuildContext context, AsyncSnapshot<List<Movie>> snapshot) {
-        if (snapshot.connectionState == ConnectionState.done) {
-          if (snapshot.hasError) {
-            return Text('Error: ${snapshot.error}');
-          } else {
-            final List<Movie> last10Movies = snapshot.data!;
-            return SizedBox(
-              height: 300,
-              child: ListViewBuilderForBest(
-                selectedMovies: last10Movies,
-              ),
-            );
-          }
-        } else {
-          return const CircularProgressIndicator();
-        }
-      },
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: TextField(
+            decoration: InputDecoration(
+              hintText: 'Search Movies...',
+              border: InputBorder.none,
+              prefixIcon: Icon(Icons.search),
+            ),
+            onChanged: (query) {
+              _changeQuery(query);
+            },
+          ),
+        ),
+        Expanded(
+          child: FutureBuilder(
+            future: loadMovies(_searchQuery),
+            builder: (BuildContext context, AsyncSnapshot<List<Movie>> snapshot) {
+              if (snapshot.connectionState == ConnectionState.done) {
+                if (snapshot.hasError) {
+                  return Text('Error: ${snapshot.error}');
+                } else {
+                  final List<Movie> last10Movies = snapshot.data!;
+                  return SizedBox(
+                    height: 300,
+                    child: ListViewBuilderForBest(
+                      selectedMovies: last10Movies,
+                    ),
+                  );
+                }
+              } else {
+                return const CircularProgressIndicator();
+              }
+            },
+          ),
+        ),
+      ],
     );
   }
 
-  Future<List<Movie>> loadMovies() async {
+    void _changeQuery(String query) {
+    setState(() {
+      _searchQuery = query;
+    });
+  }
+
+    Future<void> _loadMovies() async {
     String jsonData = await rootBundle.loadString('assets/movie.json');
     List<Movie> movies =
         List<Movie>.from(jsonDecode(jsonData).map((x) => Movie.fromJson(x)));
-    int lastIndex = movies.length - 1;
-    int startIndex = lastIndex - 9;
-    List<Movie> last10Movies = movies.sublist(startIndex, lastIndex + 1);
-    return last10Movies;
+    setState(() {
+      _movies = movies.take(10).toList();
+      _filteredMovies = _movies;
+      _isLoading = false;
+    });
   }
+
 }
+  
+
+
+  Future<List<Movie>> loadMovies(query) async {
+    String jsonData = await rootBundle.loadString('assets/movie.json');
+    List<Movie> movies =
+        List<Movie>.from(jsonDecode(jsonData).map((x) => Movie.fromJson(x)));
+    if (query.toString().isEmpty){
+      int lastIndex = movies.length - 1;
+      int startIndex = lastIndex - 9;
+      List<Movie> last10Movies = movies.sublist(startIndex, lastIndex + 1);  
+      return last10Movies;
+    } else{
+      List<Movie> filteredMovies = movies.where((movie) {
+      final name = movie.name?.toLowerCase() ?? '';
+      return name.contains(query.toLowerCase());
+    }).toList();
+    return filteredMovies;
+    }
+
+  }
+
+
 
 class ListViewBuilderForBest extends StatelessWidget {
   const ListViewBuilderForBest({
@@ -168,3 +235,4 @@ class BestList extends StatelessWidget {
     );
   }
 }
+
