@@ -126,10 +126,6 @@ class _MainWidgetState extends State<MainWidget> {
             icon: Icon(Icons.library_books),
             label: ProjectStrings.bottomNavigationBarLibrary,
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: ProjectStrings.bottomNavigationBarSearch,
-          ),
         ],
         currentIndex: selectedIndex,
         onTap: onItemTapped,
@@ -149,10 +145,6 @@ class _MainWidgetState extends State<MainWidget> {
         case 1:
           // Set the title to 'Library' when the library icon is selected
           appBarTitle = ProjectStrings.libraryWidgetAppbarString;
-          break;
-        case 2:
-          // Set the title to the default value when the menu icon is selected
-          appBarTitle = ProjectStrings.searchWidgetAppbarString;
           break;
       }
     });
